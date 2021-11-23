@@ -3,7 +3,7 @@
 let mapTimer = new Map;
 
 
-fetch('../static/json/message.js')
+fetch('./static/json/message.js')
     .then(response => response.json())
     .then(json => {
             for(let event of json['data']){
