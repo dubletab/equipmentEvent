@@ -2,31 +2,28 @@
 <html lang="ru">
 <head>
   
-  {% block title %}<title>Состояние оборудования</title>{% endblock %}
+  <title>Состояние обрудования</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="pragma" content="no-cache"/>
   
-  <!-- Добавление дополнительного статического CSS файла -->
-  {% load static %}
-  
 
-  <script src="{% static 'js/jquery-3.1.1.min.js' %}"></script>
-  <script src="{% static 'js/script.js' %}"></script>
-  <script src="{% static 'js/moment.js' %}"></script>
+  <script src="../static/js/jquery-3.1.1.min.js"></script>
+  <script src="../static/js/paint.js"></script>
+  <script src="../static/js/moment.js"></script>
 
 
-  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <link rel="stylesheet" href="../static/css/paint.css">
 
 </head>
 
 <body>
-{% block content %}
+
 
 <div class="wrapper">
 
     <div class="title">
-        Состояние оборудования
+        Состояние обрудования
         <div class="title__timer">
             <div class="timer">00:00:00</div>
             <div class="timerDate">01.01.21</div>
@@ -132,6 +129,5 @@
 
 </div>
 
-{% endblock %}
 </body>
 </html>
