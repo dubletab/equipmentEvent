@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  
+  {% block title %}<title>Состояние оборудования</title>{% endblock %}
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="pragma" content="no-cache"/>
+  
+  <!-- Добавление дополнительного статического CSS файла -->
+  {% load static %}
+  
+
+  <script src="{% static 'js/jquery-3.1.1.min.js' %}"></script>
+  <script src="{% static 'js/script.js' %}"></script>
+  <script src="{% static 'js/moment.js' %}"></script>
+
+
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+</head>
+
+<body>
+{% block content %}
+
+<div class="wrapper">
+
+    <div class="title">
+        Состояние оборудования
+        <div class="title__timer">
+            <div class="timer">00:00:00</div>
+            <div class="timerDate">01.01.21</div>
+        </div>
+    </div>
+
+    
+    
+    <div class="chambers">
+        <div class="chamber">
+            <div class="chamber__title">Оборудование №1</div>
+            <div class="chamber__body">
+                <div class="btn" id="8">
+                    <div class="btn__text">Событие 1</div>
+                    <div class="btn__timer">00д 00:00:00</div>
+                </div>
+                <div class="btn" id="9">
+                    <div class="btn__text">Событие 2</div>
+                    <div class="btn__timer">00д 00:00:00</div>
+                </div>
+                <div class="btn" id="10">
+                    <div class="btn__text">Событие 3</div>
+                    <div class="btn__timer">00д 00:00:00</div>
+                </div>
+                <div class="btn" id="11">
+                    <div class="btn__text">Событие 4</div>
+                    <div class="btn__timer">00д 00:00:00</div>
+                </div>
+                <div class="btn" id="12">
+                    <div class="btn__text">Событие 5</div>
+                    <div class="btn__timer">00д 00:00:00</div>
+                </div>
+            </div>
+        </div>
+        <div class="chamber">
+            <div class="chamber__title">Оборудование №2</div>
+            <div class="chamber__body">
+                <div class="btn" id="13">
+                    <div class="btn__text">Событие 1</div>
+                    <div class="btn__timer">00д 00:00:00</div>
+                </div>
+                <div class="btn" id="14">
+                    <div class="btn__text">Событие 2</div>
+                    <div class="btn__timer">00д 00:00:00</div>
+                </div>
+                <div class="btn" id="15">
+                    <div class="btn__text">Событие 3</div>
+                    <div class="btn__timer">00д 00:00:00</div>
+                </div>
+                <div class="btn" id="16">
+                    <div class="btn__text">Событие 4</div>
+                    <div class="btn__timer">00д 00:00:00</div>
+                </div>
+                <div class="btn" id="17">
+                    <div class="btn__text">Событие 5</div>
+                    <div class="btn__timer">00д 00:00:00</div>
+                </div>
+                <div class="btn" id="18">
+                    <div class="btn__text">Событие 6</div>
+                    <div class="btn__timer">00д 00:00:00</div>
+                </div>
+                <div class="btn" id="19">
+                    <div class="btn__text">Событие 7</div>
+                    <div class="btn__timer">00д 00:00:00</div>
+                </div>
+                <div class="btn" id="20">
+                    <div class="btn__text">Событие 8</div>
+                    <div class="btn__timer">00д 00:00:00</div>
+                </div>
+                <div class="btn" id="21">
+                    <div class="btn__text">Событие 9</div>
+                    <div class="btn__timer">00д 00:00:00</div>
+                </div>
+                <div class="btn" id="22">
+                    <div class="btn__text">Событие 10</div>
+                    <div class="btn__timer">00д 00:00:00</div>
+                </div>
+            </div>
+        </div>
+        <div class="chamber">
+            <div class="chamber__title">Оборудование №3</div>
+            <div class="chamber__body">
+                <div class="btn" id="23">
+                    <div class="btn__text">Событие 1</div>
+                    <div class="btn__timer">00д 00:00:00</div>
+                </div>
+                <div class="btn" id="24">
+                    <div class="btn__text">Событие 2</div>
+                    <div class="btn__timer">00д 00:00:00</div>
+                </div>
+                <div class="btn" id="25">
+                    <div class="btn__text">Событие 3</div>
+                    <div class="btn__timer">00д 00:00:00</div>
+                </div>
+                <div class="btn" id="26">
+                    <div class="btn__text">Событие 4</div>
+                    <div class="btn__timer">00д 00:00:00</div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+{% endblock %}
+</body>
+</html>
